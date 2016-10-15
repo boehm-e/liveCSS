@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Live CSS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel=stylesheet href="/codemirror/doc/docs.css">
+  <link rel="stylesheet" href="/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="/codemirror/addon/fold/foldgutter.css">
+  <link rel="stylesheet" href="/codemirror/addon/dialog/dialog.css">
+  <link rel="stylesheet" href="/codemirror/theme/monokai.css">
+  <script src="/codemirror/lib/codemirror.js"></script>
+  <script src="/codemirror/addon/search/searchcursor.js"></script>
+  <script src="/codemirror/addon/search/search.js"></script>
+  <script src="/codemirror/addon/dialog/dialog.js"></script>
+  <script src="/codemirror/addon/edit/matchbrackets.js"></script>
+  <script src="/codemirror/addon/edit/closebrackets.js"></script>
+  <script src="/codemirror/addon/comment/comment.js"></script>
+  <script src="/codemirror/addon/wrap/hardwrap.js"></script>
+  <script src="/codemirror/addon/fold/foldcode.js"></script>
+  <script src="/codemirror/addon/fold/brace-fold.js"></script>
+  <script src="/codemirror/mode/xml/xml.js"></script>
+  <script src="/codemirror/mode/css/css.js"></script>
+  <script src="/codemirror/mode/javascript/javascript.js"></script>
+  <script src="/codemirror/mode/vbscript/vbscript.js"></script>
+  <script src="/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+  <script src="/codemirror/addon/hint/show-hint.js"></script>
+  <script src="/codemirror/addon/hint/css-hint.js"></script>
+  <script src="/codemirror/keymap/sublime.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://rawgit.com/RickStrahl/jquery-resizable/master/src/jquery-resizable.js"></script>
+  <link rel="stylesheet" href="css/index.css" media="screen" title="no title">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title">
+
+</head>
+<body>
+
+  <img src="https://cdn1.iconfinder.com/data/icons/general-9/500/right_arrow-512.png" alt="" id="open" />
+  <div class="panel-container" id="container">
+    <!-- LEFT PANEL CONTAINER -->
+    <div id="panel-container" class="row">
+      <div class="panel-left">
+        <div class="row">
+          <textarea id="cssCode" name="cssCode"></textarea>
+        </div>
+      </div>
+      <div class="splitter-horizontal"></div>
+      <div class="panel-bottom">
+        <div class="row" style="max-height: 300px">
+          <textarea id="htmlCode" name="htmlCode"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPLITTER VERTICAL -->
+
+    <div class="splitter">
+      <img id="close" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-circled-128.png" alt="" />
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="panel-right">
+      <div id="cover">
+      </div>
+      <div id="cover"></div>
+      <iframe src="./site_html.html" id="iframe"></iframe>
+    </div>
+  </div>
+
+</body>
+<script src="js/index.js"></script>
+</html>
